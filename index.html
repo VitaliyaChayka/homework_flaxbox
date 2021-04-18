@@ -22,80 +22,83 @@
                 <span class="logo">LOGO</span><span class="auto">AUTO</span>
             </div>
             <nav class="nav">
-                <ul class="nav_list">
-                    <li class="nav_item"><a class="nav_link" href="#">Home</a></li>
-                    <li class="nav_item"><a class="nav_link" href="#">About us</a></li>
-                    <li class="nav_item"><a class="nav_link" href="#">Shop</a></li>
-                    <li class="nav_item"><a class="nav_link" href="#">Blog</a></li>
-                    <li class="nav_item"><a class="nav_link" href="#">Contacts</a></li>
-                    <li class="nav_item"><a class="nav_link" href="#">How it works</a></li>
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">About us</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Shop</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Blog</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Contacts</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">How it works</a></li>
                 </ul>
             </nav>
             <div class="button">
-                <button type="button" class="btn1"><span class="login">Login</span>  </button>
-                <button type="button" class="btn2"><span class="register">Register</span></button>
+                <button type="button" class="button__btn1"><span class="login">Login</span></button>
+                <button type="button" class="button__btn2"><span class="register">Register</span></button>
             </div>
         </header>
 
 
         <section class="banner">
-            <div class="ellipse"></div>
-            <img class="image_auto" src="images/image_auto.png" alt="image_auto">
-            <p class="text"><span class="text1">Could you be our </span><br> <span class="text2">next winner?</span></p>
-            <button type="button" class="btn3"><span class="enter">Enter now</span></button>
-        </section>
-    </div>
-
-    <div class="content">
-        <h1 class="h1">Latest Competitions</h1>
-        <section class="news">
-            <div class="news__block">
-                <img src="images/auto1.jpg" alt="image">
-                <div class="all_text">
-
-                    <div class="text_brand">2020 Audi S5 Coupe</div>
-                    <div class="price">$19.99<span class="old_price">$54.68</span></div>
-                    <div class="tickets"><span class="
-                    quantity">5878 tickets remaining</span><button class="btn4">&rarr;</button></div>
-                </div>
+            <div class="banner__image">
+                <div class="banner__image_ellipse"></div>
+                <img class="banner__image_auto" src="images/image_auto.png" alt="image_auto">
             </div>
-
-            <div class="news__block">
-                <img src="images/auto2.jpg" alt="image">
-                <div class="all_text">
-
-                    <div class="text_brand">
-                        2016 Ford Mustang Shelby GT350</div>
-                    <div class="price">$7.99<span class="old_price">$9.68</span></div>
-                    <div class="tickets"><span class="
-                    quantity">3290 tickets remaining</span><button class="btn4">&rarr;</button></div>
-                </div>
-            </div>
-
-            <div class="news__block">
-                <img src="images/auto3.jpg" alt="image">
-                <div class="all_text">
-
-                    <div class="text_brand">2020 Bugatti Chiron</div>
-                    <div class="price">$0.99<span class="old_price">$1.39</span></div>
-                    <div class="tickets"><span class="
-                    quantity">4014 tickets remaining</span><button class="btn4">&rarr;</button></div>
-                </div>
-            </div>
-
-            <div class="news__block">
-                <img src="images/auto4.jpg" alt="image">
-                <div class="all_text">
-                    <div class="text_brand">2019 Porsche 911 Carrera</div>
-                    <div class="price">$1.99<span class="old_price">$2.99</span></div>
-                    <div class="tickets"><span class="
-                    quantity">484 tickets remaining</span><button class="btn4">&rarr;</button></div>
-                </div>
-            </div>
-
+            <div class="banner__text">
+                <p class="banner__text_1">Could you be our<br> <span class="banner__text_2">next winner?</span></p>
+                <button type="button" class="banner__button"><span class="banner__button_enter">Enter now</span></button>
         </section>
 
 
+        <section class="content">
+            <h1 class="content__h1">Latest Competitions</h1>
+            <div class="block">
+
+                <div class="content__block">
+                    <a href="#"> <img class="content__block_image" src="images/auto1.jpg" alt="2020 Audi S5 Coupe"></a>
+                    <div class="content__block_info">
+                        <a href="#" class="content__block_brand">2020 Audi S5 Coupe</a>
+                        <div class="content__block_price">$19.99<span class="content__block_oldprice">$54.68</span></div>
+                        <p class="content__block_tickets">5878 tickets remaining </p>
+                    </div>
+                    <form action="#"><button type="submit" class="content__block_button">&rarr;</button></form>
+
+                </div>
+
+                <div class="content__block">
+                    <a href="#"><img class="content__block_image" src="images/auto2.jpg" alt="2016 Ford Mustang Shelby GT350"></a>
+                    <div class="content__block_info">
+                        <a href="#" class="content__block_brand">
+                            2016 Ford Mustang Shelby GT350</a>
+                        <div class="content__block_price">$7.99<span class="content__block_oldprice">$9.68</span></div>
+                        <p class="content__block_tickets">3290 tickets remaining</p>
+                    </div>
+                    <form action="#"><button type="submit" class="content__block_button">&rarr;</button></form>
+                </div>
+
+                <div class="content__block">
+                    <a href="#"> <img class="content__block_image" src="images/auto3.jpg" alt="2020 Bugatti Chiron"></a>
+                    <div class="content__block_info">
+                        <a href="#" class="content__block_brand">2020 Bugatti Chiron</a>
+                        <div class="content__block_price">$0.99<span class="content__block_oldprice">$1.39</span></div>
+                        <p class="content__block_tickets">4014 tickets remaining</p>
+                    </div>
+                    <form action="#"><button type="submit" class="content__block_button">&rarr;</button></form>
+
+                </div>
+
+                <div class="content__block">
+                    <a href="#"><img class="content__block_image" src="images/auto4.jpg" alt="2019 Porsche 911 Carrera"></a>
+                    <div class="content__block_info">
+                        <a href="#" class="content__block_brand">
+                            2019 Porsche 911 Carrera
+                        </a>
+                        <div class="content__block_price">$1.99<span class="content__block_oldprice">$2.99</span></div>
+                        <p class="content__block_tickets">484 tickets remaining</p>
+                    </div>
+                    <form action="#"><button type="submit" class="content__block_button">&rarr;</button></form>
+                </div>
+            </div>
+        </section>
 </body>
 
 </html>
