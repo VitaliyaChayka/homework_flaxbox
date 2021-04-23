@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5BBAD5">
+    <meta name="msapplication-TileColor" content="#DA532C">
+    <meta name="theme-color" content="#FFFFFF">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <span class="logo">LOGO</span><span class="auto">AUTO</span>
+        </div>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">About us</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Shop</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Blog</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Contacts</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">How it works</a></li>
+            </ul>
+        </nav>
+        <div class="button">
+            <button type="button" class="button__btn1"><span class="login">Login</span></button>
+            <button type="button" class="button__btn2"><span class="register">Register</span></button>
+        </div>
+    </header>
+
+    <section class="main">
+
+        <div class="container">
+            <form class="form">
+                <input class="toggle__input" id="login" type="radio" name="form" checked>
+                <input class="toggle__input" id="reg" type="radio" name="form">
+
+                <label for="login" class="label__item label__login">Login</label>
+                <label for="reg" class="label__item label__reg">Register</label>
+
+
+                <div class="login-block">
+                    <h3 class="login-block__h3">Login</h3>
+
+                    <form action="#" class="login-block__type">
+                        <label for="email" class="block__label">E-mail</label><br><br>
+                        <input type="email" id="email" name="email" class="login-block__input">
+                    </form>
+
+                    <form action="#" class="login-block__type">
+                        <input type="password" id="pwd" name="pwd" class="login-block__input">
+                    </form>
+
+                    <form action="#" class="login-block__type">
+                        <label for="pwd" class="block__label login-block__checkbox_label">Forgot your password?</label><br>
+                        <div class="login-block__type_checkbox"> <input class="login-block__checkbox" type="checkbox"><span class="block__label">Remember me</span></div>
+                    </form>
+
+                    <button type="button " class="login-block__button"><span class="login-block__button_name">Log in</span></button>
+                </div>
+
+
+                <div class="reg-block">
+                    <h3 class="reg-block__h3">Create an Account</h3>
+                    <form class="reg-block__type" action="#">
+                        <div class="block__type">
+                            <label class="block__label" for="fname">First Name</label>
+                            <label class="block__label" for="lname">Last Name</label><br>
+                        </div>
+                        <div class="block__type">
+                            <input class="reg-block__input" type="text" id="fname" name="fname" value="">
+                            <input class="reg-block__input" type="text" id="lname" name="lname" value="">
+                        </div>
+                    </form>
+
+
+                    <form class="mail-block__type">
+                        <label for="email" class="block__label">E-mail</label><br>
+                        <input class="mail-block__input" type="email" id="email" name="email">
+                    </form>
+
+                    <form class="radio-block__type">
+                        <input class="radio-block__type_item" type="radio" id="male" name="gender" value="male">
+                        <label class="radio-block__type_item" for="male">Male</label>
+                        <input class="radio-block__type_item" type="radio" id="female" name="gender" value="female">
+                        <label class=" radio-block__type_item" for="female">Female</label><br>
+                    </form>
+
+                    <form class="reg-block__type" action="#">
+                        <div class="block__type">
+                            <label class="block__label" for="fname">Password</label>
+                            <label class="block__label" for="lname">Confirm Password</label><br>
+                        </div>
+                        <div class="block__type">
+                            <input class="reg-block__input" type="text" id="fname" name="fname" value="***">
+                            <input class="reg-block__input" type="text" id="lname" name="lname" value="***">
+                        </div>
+                    </form>
+                    <div class="reg-button">
+                        <button type="button" class="button__btn2"><span class="register">Register</span></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+    </section>
+
+    <footer class=" footer ">
+        <div class="footer__logo ">
+            <span class="footer__logo ">LOGOAUTO</span>
+        </div>
+        <nav class="footer__nav ">
+            <ul class="footer__nav__list ">
+                <li class="footer__nav__item "><a class="footer__nav__link " href="# ">Home</a></li>
+                <li class="footer__nav__item "><a class="footer__nav__link " href="# ">About us</a></li>
+                <li class="footer__nav__item "><a class="footer__nav__link " href="# ">Shop</a></li>
+                <li class="footer__nav__item "><a class="footer__nav__link " href="# ">Blog</a></li>
+                <li class="footer__nav__item "><a class="footer__nav__link " href="# ">Contacts</a></li>
+                <li class="footer__nav__item "><a class="footer__nav__link " href="# ">How it works</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
