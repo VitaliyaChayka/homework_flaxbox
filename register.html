@@ -49,76 +49,80 @@
     <section class="main">
 
         <div class="container">
-            <form class="form">
-                <input class="toggle__input" id="login" type="radio" name="form" checked>
-                <input class="toggle__input" id="reg" type="radio" name="form">
+            <div class="form">
+                <input class="toggle__input" id="login" type="radio" name="form">
+                <input class="toggle__input" id="reg" type="radio" name="form" checked>
 
                 <label for="login" class="label__item label__login">Login</label>
                 <label for="reg" class="label__item label__reg">Register</label>
 
-
-                <div class="login-block">
+                <form action="#" class="login-block">
                     <h3 class="login-block__h3">Login</h3>
 
-                    <form action="#" class="login-block__type">
-                        <label for="email" class="block__label">E-mail</label><br><br>
+                    <div class="login-block__type">
+                        <label for="email" class="block__label">E-mail</label>
                         <input type="email" id="email" name="email" class="login-block__input">
-                    </form>
+                    </div>
 
-                    <form action="#" class="login-block__type">
+                    <div class="login-block__type">
+                        <label for="pwd" class="block__label login-block__label">Password</label>
                         <input type="password" id="pwd" name="pwd" class="login-block__input">
-                    </form>
+                    </div>
 
-                    <form action="#" class="login-block__type">
-                        <label for="pwd" class="block__label login-block__checkbox_label">Forgot your password?</label><br>
-                        <div class="login-block__type_checkbox"> <input class="login-block__checkbox" type="checkbox"><span class="block__label">Remember me</span></div>
-                    </form>
+                    <div class="login-block__type">
+                        <label for="fogpwd" class="block__label login-block__checkbox_label">Forgot your password?</label>
+                        <div class="login-block__type_checkbox"> <input id="fogpwd" class="login-block__checkbox" type="checkbox"><span class="block__label">Remember me</span></div>
+                    </div>
 
-                    <button type="button " class="login-block__button"><span class="login-block__button_name">Log in</span></button>
-                </div>
+                    <button type="button" class="login-block__button"><span class="login-block__button_name">Login</span></button>
+                </form>
 
+                <form action="#" class="reg-block">
 
-                <div class="reg-block">
                     <h3 class="reg-block__h3">Create an Account</h3>
-                    <form class="reg-block__type" action="#">
-                        <div class="block__type">
-                            <label class="block__label" for="fname">First Name</label>
-                            <label class="block__label" for="lname">Last Name</label><br>
-                        </div>
-                        <div class="block__type">
-                            <input class="reg-block__input" type="text" id="fname" name="fname" value="">
-                            <input class="reg-block__input" type="text" id="lname" name="lname" value="">
-                        </div>
-                    </form>
+                    <div class="block__type block__type_label">
+                        <label class="block__label" for="fname">First Name</label>
+                        <label class="block__label block__label_last" for="lname">Last Name</label>
+                    </div>
+                    <div class="block__type">
+                        <input class="reg-block__input" type="text" id="fname" name="fname" value="">
+                        <input class="reg-block__input" type="text" id="lname" name="lname" value="">
+                    </div>
 
+                    <div class="block__e-mail">
+                        <label for="e-mail" class="block__label block__label_e-mail"> E-mail </label>
 
-                    <form class="mail-block__type">
-                        <label for="email" class="block__label">E-mail</label><br>
-                        <input class="mail-block__input" type="email" id="email" name="email">
-                    </form>
+                        <input class="mail-block__input" type="e-mail" id="e-mail" name="e-mail" value="">
+                    </div>
 
-                    <form class="radio-block__type">
+                    <div class="radio-block__type">
                         <input class="radio-block__type_item" type="radio" id="male" name="gender" value="male">
-                        <label class="radio-block__type_item" for="male">Male</label>
+                        <label class="radio-block__type_item block__label" for="male">Male</label>
                         <input class="radio-block__type_item" type="radio" id="female" name="gender" value="female">
-                        <label class=" radio-block__type_item" for="female">Female</label><br>
-                    </form>
+                        <label class=" radio-block__type_item block__label" for="female">Female</label>
+                    </div>
 
-                    <form class="reg-block__type" action="#">
-                        <div class="block__type">
-                            <label class="block__label" for="fname">Password</label>
-                            <label class="block__label" for="lname">Confirm Password</label><br>
-                        </div>
-                        <div class="block__type">
-                            <input class="reg-block__input" type="text" id="fname" name="fname" value="***">
-                            <input class="reg-block__input" type="text" id="lname" name="lname" value="***">
-                        </div>
-                    </form>
+                    <div class="block__type">
+                        <label class="block__label" for="pass">Password</label>
+                        <label class="block__label block__label_last" for="confpass">Confirm Password</label>
+                    </div>
+
+                    <div class="block__type block__type_inputpass">
+                        <input class="reg-block__input " type="text" id="pass" name="pass" value="***">
+                        <input class="reg-block__input" type="text" id="confpass" name="confpass" value="***">
+                    </div>
+
                     <div class="reg-button">
                         <button type="button" class="button__btn2"><span class="register">Register</span></button>
                     </div>
-                </div>
-            </form>
+                    <p class="reg-block__text">By clicking the 'Sign Up' button, you confirm that you accept our <br><a href="#" class="reg-block__link">Terms of Use </a> and <a href="#" class="reg-block__link">Privecy Policy</a></p>.
+
+
+                </form>
+
+
+
+            </div>
         </div>
 
 

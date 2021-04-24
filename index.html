@@ -26,26 +26,27 @@
 </head>
 
 <body>
+    <header class="header">
+        <div class="logo">
+            <span class="logo">LOGO</span><span class="auto">AUTO</span>
+        </div>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">About us</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Shop</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Blog</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Contacts</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">How it works</a></li>
+            </ul>
+        </nav>
+        <div class="button">
+            <button type="button" class="button__btn1"><span class="login">Login</span></button>
+            <button type="button" class="button__btn2"><span class="register">Register</span></button>
+        </div>
+    </header>
+
     <div class="main">
-        <header class="header">
-            <div class="logo">
-                <span class="logo">LOGO</span><span class="auto">AUTO</span>
-            </div>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">About us</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">Shop</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">Blog</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">Contacts</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">How it works</a></li>
-                </ul>
-            </nav>
-            <div class="button">
-                <button type="button" class="button__btn1"><span class="login">Login</span></button>
-                <button type="button" class="button__btn2"><span class="register">Register</span></button>
-            </div>
-        </header>
 
 
         <section class="banner">
@@ -117,6 +118,8 @@
 
                 <div class="instruction__block">
                     <a href="#"> <img class="instruction___block_image" src="images/touchscreen.png" alt="touchscreen"></a>
+                    <!--  <a href="#"> <svg><use xlink:href="sprite.svg#hat"></use></svg></a>-->
+
                     <h5 class="instruction___block_h5">1. Selection of the Car</h5>
                     <p class="instruction___block_text">We select and offer several car options from US auctions based on your budget and requirements.</p>
                 </div>
@@ -156,7 +159,7 @@
 
         <section class="review">
             <div class="review__block">
-                <p class="review__block_text">"Unbelievable this is a dream come true, no way would I ever think I would own a car like this. What great blokes. Thank you very much! 5 star from me!!!"</p>
+                <p class="review__block_text">"Unbelievable this is a dream come true, no way would I ever think I would own<br> a car like this. What great blokes. <br>Thank you very much!<br> 5 star from me!!!"</p>
                 <p class="review__block_name">Danny Churchman</p>
             </div>
             <div class="review__photo">
@@ -207,25 +210,24 @@
                 </div>
             </section>
         </div>
-        <footer class="footer">
-            <div class="footer__logo">
-                <span class="footer__logo">LOGOAUTO</span>
-            </div>
-            <nav class="footer__nav">
-                <ul class="footer__nav__list">
-                    <li class="footer__nav__item"><a class="footer__nav__link" href="#">Home</a></li>
-                    <li class="footer__nav__item"><a class="footer__nav__link" href="#">About us</a></li>
-                    <li class="footer__nav__item"><a class="footer__nav__link" href="#">Shop</a></li>
-                    <li class="footer__nav__item"><a class="footer__nav__link" href="#">Blog</a></li>
-                    <li class="footer__nav__item"><a class="footer__nav__link" href="#">Contacts</a></li>
-                    <li class="footer__nav__item"><a class="footer__nav__link" href="#">How it works</a></li>
-                </ul>
-            </nav>
 
-
-        </footer>
     </div>
 
+    <footer class="footer">
+        <div class="footer__logo">
+            <span class="footer__logo">LOGOAUTO</span>
+        </div>
+        <nav class="footer__nav">
+            <ul class="footer__nav__list">
+                <li class="footer__nav__item"><a class="footer__nav__link" href="#">Home</a></li>
+                <li class="footer__nav__item"><a class="footer__nav__link" href="#">About us</a></li>
+                <li class="footer__nav__item"><a class="footer__nav__link" href="#">Shop</a></li>
+                <li class="footer__nav__item"><a class="footer__nav__link" href="#">Blog</a></li>
+                <li class="footer__nav__item"><a class="footer__nav__link" href="#">Contacts</a></li>
+                <li class="footer__nav__item"><a class="footer__nav__link" href="#">How it works</a></li>
+            </ul>
+        </nav>
+    </footer>
 
 
 </body>

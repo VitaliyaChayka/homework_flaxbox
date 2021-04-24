@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shop</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
 
@@ -26,222 +26,222 @@
 </head>
 
 <body>
-    <section class="main">
-        <header class="header">
-            <div class="logo">
-                <span class="logo">LOGO</span><span class="auto">AUTO</span>
-            </div>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">About us</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">Shop</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">Blog</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">Contacts</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">How it works</a></li>
+    <header class="header">
+        <div class="logo">
+            <span class="logo">LOGO</span><span class="auto">AUTO</span>
+        </div>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">About us</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Shop</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Blog</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Contacts</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">How it works</a></li>
+            </ul>
+        </nav>
+        <div class="button">
+            <button type="button" class="button__btn1"><span class="login">Login</span></button>
+            <button type="button" class="button__btn2"><span class="register">Register</span></button>
+        </div>
+    </header>
+
+
+    <section class="shop">
+
+        <aside>
+            <div class="filter">
+                <ul class="filter__accordion">
+                    <li class="accordion__item">
+                        <input type="checkbox" class="accordion__toggle">
+                        <h2 class="filter__price__h2">Price</h2>
+                        <div class="filter__content">
+                            <form>
+                                <div class="filter__price_item">
+                                    <label for="price">Min</label>
+                                    <span>-</span>
+                                    <label for="price">Max</label><br>
+                                </div>
+                                <div class="filter__price_input">
+                                    <input type="number" id="price" name="price" min="0" max="20000">
+                                    <input type="number" id="price" name="price" min="0" max="20000">
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="accordion__item">
+                        <input type="checkbox" class="accordion__toggle">
+                        <h2 class="filter__brands__h2">Brands</h2>
+                        <div class="filter__content">
+                            <input class="filter__brands__item" type="checkbox"><span class="filter__brands__name name_toyota">Toyota</span><br>
+                            <input class="filter__brands__item" type="checkbox"><span class="filter__brands__name name_ford">Ford</span><br>
+                            <input class="filter__brands__item" type="checkbox"><span class="filter__brands__name name_opel">Opel</span><br>
+                            <input class="filter__brands__item" type="checkbox"><span class="filter__brands__name name_mercedes">Mercedes</span><br>
+                            <input class="filter__brands__item" type="checkbox"><span class="filter__brands__name name_audi">Audi</span><br>
+                            <input class="filter__brands__item" type="checkbox"><span class="filter__brands__name name_bmw">BMW</span><br>
+                        </div>
+                    </li>
                 </ul>
-            </nav>
-            <div class="button">
-                <button type="button" class="button__btn1"><span class="login">Login</span></button>
-                <button type="button" class="button__btn2"><span class="register">Register</span></button>
+
+                <div class="filter__search">
+
+                    <form>
+                        <label for="gsearch"><h2 class="filter__search_h2">Search</h2></label>
+                        <input class="filter__search__input" type="search" id="gsearch" name="gsearch" placeholder="Search by name...">
+                    </form>
+                </div>
+                <div class="contacts ">
+                    <h2 class="contacts__h2"> Contacts Details</h2>
+
+                    <div class="contacts__item "><a href="tel:+380508103022"> Phone: +380508103022</a></div>
+                    <div class="contacts__item "><a href="Email: info@pixsellz.io">Email: info@pixsellz.io</a></div>
+                    <div class="contacts__item "><a href="https://goo.gl/maps/QkmeWh4zHLbzq5AT7" target="_blank"> Adress: 456 Hagenes Gardens Suite 808</a></div>
+                </div>
             </div>
-        </header>
 
-        <section class="shop">
+        </aside>
 
-            <aside>
-                <div class="filter">
-                    <ul class="filter__accordion">
-                        <li class="accordion__item">
-                            <input type="checkbox" class="accordion__toggle">
-                            <h2 class="filter__price__h2">Price</h2>
-                            <div class="filter__content">
-                                <form>
-                                    <div class="filter__price_item">
-                                        <label for="price">Min</label>
-                                        <span>-</span>
-                                        <label for="price">Max</label><br>
-                                    </div>
-                                    <div class="filter__price_input">
-                                        <input type="number" id="price" name="price" min="0" max="20000">
-                                        <input type="number" id="price" name="price" min="0" max="20000">
-                                    </div>
-                                </form>
-                            </div>
-                        </li>
-                        <li class="accordion__item">
-                            <input type="checkbox" class="accordion__toggle">
-                            <h2 class="filter__brands__h2">Brands</h2>
-                            <div class="filter__content">
-                                <input class="filter__brands__item" type="checkbox"><span class="filter__brands__name name_toyota">Toyota</span><br>
-                                <input class="filter__brands__item" type="checkbox"><span class="filter__brands__name name_ford">Ford</span><br>
-                                <input class="filter__brands__item" type="checkbox"><span class="filter__brands__name name_opel">Opel</span><br>
-                                <input class="filter__brands__item" type="checkbox"><span class="filter__brands__name name_mercedes">Mercedes</span><br>
-                                <input class="filter__brands__item" type="checkbox"><span class="filter__brands__name name_audi">Audi</span><br>
-                                <input class="filter__brands__item" type="checkbox"><span class="filter__brands__name name_bmw">BMW</span><br>
-                            </div>
-                        </li>
+        <section class="cardlist ">
+            <h2 class="cardlist__h2 ">Our shop</h2>
+
+            <div class="cardlist__blocks ">
+
+                <div class="cardlist__block content__block ">
+                    <a href="# "> <img class="content__block_image cardlist__block_image " src="images/ford1.jpg " alt="2016 Ford Mustang GT "></a>
+                    <div class="cardlist__block_info content__block_info ">
+                        <a href="# " class="cardlist__block_brand content__block_brand ">
+                                2016 Ford Mustang GT</a>
+                        <div class="cardlist__block_price content__block_price ">$7999<span class="content__block_oldprice ">$12000</span></div>
+                        <p class="cardlist__block_avail content__block_tickets ">Available at your store </p>
+                    </div>
+                    <button type="button " class="cardlist__button "><span class="read ">Read more</span></button>
+                </div>
+
+
+                <div class="cardlist__block content__block ">
+                    <a href="# "> <img class="content__block_image cardlist__block_image " src="images/ford2.jpg " alt="2016 Ford Mustang GT "></a>
+                    <div class="cardlist__block_info content__block_info ">
+                        <a href="# " class="cardlist__block_brand content__block_brand ">
+                                2016 Ford Mustang GT</a>
+                        <div class="cardlist__block_price content__block_price ">$7999</div>
+                        <p class="cardlist__block_avail content__block_tickets ">Available at your store </p>
+                    </div>
+                    <button type="button " class="cardlist__button "><span class="read ">Read more</span></button>
+                </div>
+
+                <div class="cardlist__block content__block ">
+                    <a href="# "> <img class="content__block_image cardlist__block_image " src="images/ford3.jpg " alt="2016 Ford Mustang GT "></a>
+                    <div class="cardlist__block_info content__block_info ">
+                        <a href="# " class="cardlist__block_brand content__block_brand ">
+                                2016 Ford Mustang GT</a>
+                        <div class="cardlist__block_price content__block_price ">$7999<span class="content__block_oldprice ">$12000</span></div>
+                        <p class="cardlist__block_avail content__block_tickets ">Available at your store </p>
+                    </div>
+                    <button type="button " class="cardlist__button "><span class="read ">Read more</span></button>
+                </div>
+
+                <div class="cardlist__block content__block ">
+                    <a href="# "> <img class="content__block_image cardlist__block_image " src="images/ford4.jpg " alt="2016 Ford Mustang GT "></a>
+                    <div class="cardlist__block_info content__block_info ">
+                        <a href="# " class="cardlist__block_brand content__block_brand ">
+                                2016 Ford Mustang GT</a>
+                        <div class="cardlist__block_price content__block_price ">$7999<span class="content__block_oldprice ">$12000</span></div>
+                        <p class="cardlist__block_avail content__block_tickets ">Available at your store </p>
+                    </div>
+                    <button type="button " class="cardlist__button "><span class="read ">Read more</span></button>
+                </div>
+
+                <div class="cardlist__block content__block ">
+                    <a href="# "> <img class="content__block_image cardlist__block_image " src="images/ford4.jpg " alt="2016 Ford Mustang GT "></a>
+                    <div class="cardlist__block_info content__block_info ">
+                        <a href="# " class="cardlist__block_brand content__block_brand ">
+                                2016 Ford Mustang GT</a>
+                        <div class="cardlist__block_price content__block_price ">$7999</div>
+                        <p class="cardlist__block_avail content__block_tickets ">Available at your store </p>
+                    </div>
+                    <button type="button " class="cardlist__button "><span class="read ">Read more</span></button>
+                </div>
+
+                <div class="cardlist__block content__block ">
+                    <a href="# "> <img class="content__block_image cardlist__block_image " src="images/ford2.jpg " alt="2016 Ford Mustang GT "></a>
+                    <div class="cardlist__block_info content__block_info ">
+                        <a href="# " class="cardlist__block_brand content__block_brand ">
+                                2016 Ford Mustang GT</a>
+                        <div class="cardlist__block_price content__block_price ">$7999<span class="content__block_oldprice ">$12000</span></div>
+                        <p class="cardlist__block_avail content__block_tickets ">Available at your store </p>
+                    </div>
+                    <button type="button " class="cardlist__button "><span class="read ">Read more</span></button>
+                </div>
+
+                <div class="cardlist__block content__block ">
+                    <a href="# "> <img class="content__block_image cardlist__block_image " src="images/ford1.jpg " alt="2016 Ford Mustang GT "></a>
+                    <div class="cardlist__block_info content__block_info ">
+                        <a href="# " class="cardlist__block_brand content__block_brand ">
+                                2016 Ford Mustang GT</a>
+                        <div class="cardlist__block_price content__block_price ">$7999<span class="content__block_oldprice ">$12000</span></div>
+                        <p class="cardlist__block_avail content__block_tickets ">Available at your store </p>
+                    </div>
+                    <button type="button " class="cardlist__button "><span class="read ">Read more</span></button>
+                </div>
+
+                <div class="cardlist__block content__block ">
+                    <a href="# "> <img class="content__block_image cardlist__block_image " src="images/ford3.jpg " alt="2016 Ford Mustang GT "></a>
+                    <div class="cardlist__block_info content__block_info ">
+                        <a href="# " class="cardlist__block_brand content__block_brand ">
+                                2016 Ford Mustang GT</a>
+                        <div class="cardlist__block_price content__block_price ">$7999</div>
+                        <p class="cardlist__block_avail content__block_tickets ">Available at your store </p>
+                    </div>
+                    <button type="button " class="cardlist__button "><span class="read ">Read more</span></button>
+                </div>
+
+                <div class="cardlist__block content__block ">
+                    <a href="# "> <img class="content__block_image cardlist__block_image " src="images/ford1.jpg " alt="2016 Ford Mustang GT "></a>
+                    <div class="cardlist__block_info content__block_info ">
+                        <a href="# " class="cardlist__block_brand content__block_brand ">
+                                2016 Ford Mustang GT</a>
+                        <div class="cardlist__block_price content__block_price ">$7999<span class="content__block_oldprice ">$12000</span></div>
+                        <p class="cardlist__block_avail content__block_tickets ">Available at your store </p>
+                    </div>
+                    <button type="button " class="cardlist__button "><span class="read ">Read more</span></button>
+                </div>
+            </div>
+
+            <section class="pages ">
+                <nav class="pages__nav ">
+                    <ul class="pages__nav__list ">
+                        <li class="pages__nav__item "><a class="pages__nav__link " href="# ">1</a></li>
+                        <li class="pages__nav__item "><a class="pages__nav__link " href="# ">2</a></li>
+                        <li class="pages__nav__item "><a class="pages__nav__link " href="# ">3</a></li>
+                        <li class="pages__nav__item "><a class="pages__nav__link " href="# ">4</a></li>
+                        <li class="pages__nav__item "><a class="pages__nav__link " href="# ">...</a></li>
+                        <li class="pages__nav__item "><a class="pages__nav__link " href="# ">10</a></li>
                     </ul>
+                    <button type="button " class="pages__nav__button "><span class="next ">Next &gt;</span></button>
 
-                    <div class="filter__search">
+                </nav>
 
-                        <form>
-                            <label for="gsearch"><h2 class="filter__search_h2">Search</h2></label>
-                            <input class="filter__search__input" type="search" id="gsearch" name="gsearch" placeholder="Search by name...">
-                        </form>
-                    </div>
-                    <div class="contacts ">
-                        <h2 class="contacts__h2"> Contacts Details</h2>
-
-                        <div class="contacts__item "><a href="tel:+380508103022"> Phone: +380508103022</a></div>
-                        <div class="contacts__item "><a href="Email: info@pixsellz.io">Email: info@pixsellz.io</a></div>
-                        <div class="contacts__item "><a href="https://goo.gl/maps/QkmeWh4zHLbzq5AT7" target="_blank"> Adress: 456 Hagenes Gardens Suite 808</a></div>
-                    </div>
-                </div>
-
-            </aside>
-
-            <section class="cardlist ">
-                <h2 class="cardlist__h2 ">Our shop</h2>
-
-                <div class="cardlist__blocks ">
-
-                    <div class="cardlist__block content__block ">
-                        <a href="# "> <img class="content__block_image cardlist__block_image " src="images/ford1.jpg " alt="2016 Ford Mustang GT "></a>
-                        <div class="cardlist__block_info content__block_info ">
-                            <a href="# " class="cardlist__block_brand content__block_brand ">
-                                2016 Ford Mustang GT</a>
-                            <div class="cardlist__block_price content__block_price ">$7999<span class="content__block_oldprice ">$12000</span></div>
-                            <p class="cardlist__block_avail content__block_tickets ">Available at your store </p>
-                        </div>
-                        <button type="button " class="cardlist__button "><span class="read ">Read more</span></button>
-                    </div>
-
-
-                    <div class="cardlist__block content__block ">
-                        <a href="# "> <img class="content__block_image cardlist__block_image " src="images/ford2.jpg " alt="2016 Ford Mustang GT "></a>
-                        <div class="cardlist__block_info content__block_info ">
-                            <a href="# " class="cardlist__block_brand content__block_brand ">
-                                2016 Ford Mustang GT</a>
-                            <div class="cardlist__block_price content__block_price ">$7999</div>
-                            <p class="cardlist__block_avail content__block_tickets ">Available at your store </p>
-                        </div>
-                        <button type="button " class="cardlist__button "><span class="read ">Read more</span></button>
-                    </div>
-
-                    <div class="cardlist__block content__block ">
-                        <a href="# "> <img class="content__block_image cardlist__block_image " src="images/ford3.jpg " alt="2016 Ford Mustang GT "></a>
-                        <div class="cardlist__block_info content__block_info ">
-                            <a href="# " class="cardlist__block_brand content__block_brand ">
-                                2016 Ford Mustang GT</a>
-                            <div class="cardlist__block_price content__block_price ">$7999<span class="content__block_oldprice ">$12000</span></div>
-                            <p class="cardlist__block_avail content__block_tickets ">Available at your store </p>
-                        </div>
-                        <button type="button " class="cardlist__button "><span class="read ">Read more</span></button>
-                    </div>
-
-                    <div class="cardlist__block content__block ">
-                        <a href="# "> <img class="content__block_image cardlist__block_image " src="images/ford4.jpg " alt="2016 Ford Mustang GT "></a>
-                        <div class="cardlist__block_info content__block_info ">
-                            <a href="# " class="cardlist__block_brand content__block_brand ">
-                                2016 Ford Mustang GT</a>
-                            <div class="cardlist__block_price content__block_price ">$7999<span class="content__block_oldprice ">$12000</span></div>
-                            <p class="cardlist__block_avail content__block_tickets ">Available at your store </p>
-                        </div>
-                        <button type="button " class="cardlist__button "><span class="read ">Read more</span></button>
-                    </div>
-
-                    <div class="cardlist__block content__block ">
-                        <a href="# "> <img class="content__block_image cardlist__block_image " src="images/ford4.jpg " alt="2016 Ford Mustang GT "></a>
-                        <div class="cardlist__block_info content__block_info ">
-                            <a href="# " class="cardlist__block_brand content__block_brand ">
-                                2016 Ford Mustang GT</a>
-                            <div class="cardlist__block_price content__block_price ">$7999</div>
-                            <p class="cardlist__block_avail content__block_tickets ">Available at your store </p>
-                        </div>
-                        <button type="button " class="cardlist__button "><span class="read ">Read more</span></button>
-                    </div>
-
-                    <div class="cardlist__block content__block ">
-                        <a href="# "> <img class="content__block_image cardlist__block_image " src="images/ford2.jpg " alt="2016 Ford Mustang GT "></a>
-                        <div class="cardlist__block_info content__block_info ">
-                            <a href="# " class="cardlist__block_brand content__block_brand ">
-                                2016 Ford Mustang GT</a>
-                            <div class="cardlist__block_price content__block_price ">$7999<span class="content__block_oldprice ">$12000</span></div>
-                            <p class="cardlist__block_avail content__block_tickets ">Available at your store </p>
-                        </div>
-                        <button type="button " class="cardlist__button "><span class="read ">Read more</span></button>
-                    </div>
-
-                    <div class="cardlist__block content__block ">
-                        <a href="# "> <img class="content__block_image cardlist__block_image " src="images/ford1.jpg " alt="2016 Ford Mustang GT "></a>
-                        <div class="cardlist__block_info content__block_info ">
-                            <a href="# " class="cardlist__block_brand content__block_brand ">
-                                2016 Ford Mustang GT</a>
-                            <div class="cardlist__block_price content__block_price ">$7999<span class="content__block_oldprice ">$12000</span></div>
-                            <p class="cardlist__block_avail content__block_tickets ">Available at your store </p>
-                        </div>
-                        <button type="button " class="cardlist__button "><span class="read ">Read more</span></button>
-                    </div>
-
-                    <div class="cardlist__block content__block ">
-                        <a href="# "> <img class="content__block_image cardlist__block_image " src="images/ford3.jpg " alt="2016 Ford Mustang GT "></a>
-                        <div class="cardlist__block_info content__block_info ">
-                            <a href="# " class="cardlist__block_brand content__block_brand ">
-                                2016 Ford Mustang GT</a>
-                            <div class="cardlist__block_price content__block_price ">$7999</div>
-                            <p class="cardlist__block_avail content__block_tickets ">Available at your store </p>
-                        </div>
-                        <button type="button " class="cardlist__button "><span class="read ">Read more</span></button>
-                    </div>
-
-                    <div class="cardlist__block content__block ">
-                        <a href="# "> <img class="content__block_image cardlist__block_image " src="images/ford1.jpg " alt="2016 Ford Mustang GT "></a>
-                        <div class="cardlist__block_info content__block_info ">
-                            <a href="# " class="cardlist__block_brand content__block_brand ">
-                                2016 Ford Mustang GT</a>
-                            <div class="cardlist__block_price content__block_price ">$7999<span class="content__block_oldprice ">$12000</span></div>
-                            <p class="cardlist__block_avail content__block_tickets ">Available at your store </p>
-                        </div>
-                        <button type="button " class="cardlist__button "><span class="read ">Read more</span></button>
-                    </div>
-                </div>
-
-                <section class="pages ">
-                    <nav class="pages__nav ">
-                        <ul class="pages__nav__list ">
-                            <li class="pages__nav__item "><a class="pages__nav__link " href="# ">1</a></li>
-                            <li class="pages__nav__item "><a class="pages__nav__link " href="# ">2</a></li>
-                            <li class="pages__nav__item "><a class="pages__nav__link " href="# ">3</a></li>
-                            <li class="pages__nav__item "><a class="pages__nav__link " href="# ">4</a></li>
-                            <li class="pages__nav__item "><a class="pages__nav__link " href="# ">...</a></li>
-                            <li class="pages__nav__item "><a class="pages__nav__link " href="# ">10</a></li>
-                        </ul>
-                        <button type="button " class="pages__nav__button "><span class="next ">Next &gt;</span></button>
-
-                    </nav>
-
-                </section>
             </section>
-
-
         </section>
-        <footer class="footer ">
-            <div class="footer__logo ">
-                <span class="footer__logo ">LOGOAUTO</span>
-            </div>
-            <nav class="footer__nav ">
-                <ul class="footer__nav__list ">
-                    <li class="footer__nav__item "><a class="footer__nav__link " href="# ">Home</a></li>
-                    <li class="footer__nav__item "><a class="footer__nav__link " href="# ">About us</a></li>
-                    <li class="footer__nav__item "><a class="footer__nav__link " href="# ">Shop</a></li>
-                    <li class="footer__nav__item "><a class="footer__nav__link " href="# ">Blog</a></li>
-                    <li class="footer__nav__item "><a class="footer__nav__link " href="# ">Contacts</a></li>
-                    <li class="footer__nav__item "><a class="footer__nav__link " href="# ">How it works</a></li>
-                </ul>
-            </nav>
-        </footer>
+
+
     </section>
+
+    <footer class="footer ">
+        <div class="footer__logo ">
+            <span class="footer__logo ">LOGOAUTO</span>
+        </div>
+        <nav class="footer__nav ">
+            <ul class="footer__nav__list ">
+                <li class="footer__nav__item "><a class="footer__nav__link " href="# ">Home</a></li>
+                <li class="footer__nav__item "><a class="footer__nav__link " href="# ">About us</a></li>
+                <li class="footer__nav__item "><a class="footer__nav__link " href="# ">Shop</a></li>
+                <li class="footer__nav__item "><a class="footer__nav__link " href="# ">Blog</a></li>
+                <li class="footer__nav__item "><a class="footer__nav__link " href="# ">Contacts</a></li>
+                <li class="footer__nav__item "><a class="footer__nav__link " href="# ">How it works</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 
 </html>
