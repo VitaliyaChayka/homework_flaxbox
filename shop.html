@@ -8,6 +8,7 @@
     <title>Shop</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="icomoon-2/style.css">
 
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -54,31 +55,34 @@
                 <ul class="filter__accordion">
                     <li class="accordion__item">
                         <input type="checkbox" class="accordion__toggle">
-                        <h2 class="filter__price__h2">Price</h2>
+                        <div class="filter__price">
+                            <h2 class="filter__price__h2">Price</h2><span class="icon-triangle-up"></span>
+                        </div>
                         <div class="filter__content">
                             <form>
                                 <div class="filter__price_item">
-                                    <label for="price">Min</label>
-                                    <span>-</span>
-                                    <label for="price">Max</label><br>
+                                    <label class="filter__price_items" for="min-price">Min</label>
+                                    <label class="filter__price_items" for="max-price">Max</label>
                                 </div>
                                 <div class="filter__price_input">
-                                    <input type="number" id="price" name="price" min="0" max="20000">
-                                    <input type="number" id="price" name="price" min="0" max="20000">
+                                    <input class="filter__price_inputs" type="number" id="min-price" name="price" min="0" max="20000" value="0" placeholder="filter__price_placeholder">
+                                    <span class="filter_span"> - </span>
+                                    <input class="filter__price_inputs" type="number" id="max-price" name="price" min="0" max="20000" value="0" placeholder="filter__price_placeholder">
                                 </div>
                             </form>
                         </div>
                     </li>
                     <li class="accordion__item">
                         <input type="checkbox" class="accordion__toggle">
-                        <h2 class="filter__brands__h2">Brands</h2>
+                        <div class="filter__brands">
+                            <h2 class="filter__brands__h2">Brands</h2><span class="icon-triangle-up"></span></div>
                         <div class="filter__content">
-                            <input class="filter__brands__item" type="checkbox"><span class="filter__brands__name name_toyota">Toyota</span><br>
-                            <input class="filter__brands__item" type="checkbox"><span class="filter__brands__name name_ford">Ford</span><br>
-                            <input class="filter__brands__item" type="checkbox"><span class="filter__brands__name name_opel">Opel</span><br>
-                            <input class="filter__brands__item" type="checkbox"><span class="filter__brands__name name_mercedes">Mercedes</span><br>
-                            <input class="filter__brands__item" type="checkbox"><span class="filter__brands__name name_audi">Audi</span><br>
-                            <input class="filter__brands__item" type="checkbox"><span class="filter__brands__name name_bmw">BMW</span><br>
+                            <input class="filter__brands__item" type="checkbox"><span class="filter__brands__name name_toyota"> Toyota</span><br>
+                            <input class="filter__brands__item" type="checkbox"><span class="filter__brands__name name_ford"> Ford</span><br>
+                            <input class="filter__brands__item" type="checkbox"><span class="filter__brands__name name_opel"> Opel</span><br>
+                            <input class="filter__brands__item" type="checkbox"><span class="filter__brands__name name_mercedes"> Mercedes</span><br>
+                            <input class="filter__brands__item" type="checkbox"><span class="filter__brands__name name_audi"> Audi</span><br>
+                            <input class="filter__brands__item" type="checkbox"><span class="filter__brands__name name_bmw"> BMW</span><br>
                         </div>
                     </li>
                 </ul>
@@ -93,11 +97,19 @@
                 <div class="contacts ">
                     <h2 class="contacts__h2"> Contacts Details</h2>
 
-                    <div class="contacts__item "><a href="tel:+380508103022"> Phone: +380508103022</a></div>
-                    <div class="contacts__item "><a href="Email: info@pixsellz.io">Email: info@pixsellz.io</a></div>
-                    <div class="contacts__item "><a href="https://goo.gl/maps/QkmeWh4zHLbzq5AT7" target="_blank"> Adress: 456 Hagenes Gardens Suite 808</a></div>
+                    <div class="contacts__item ">
+
+                        <a href="tel:+380508103022" class="contact__link"> <svg class="icon" viewBox="0 0 18 18"><use xlink:href="sprite.svg#phone"></svg> Phone: +380508103022</a>
+                    </div>
+                    <div class="contacts__item ">
+                        <a href="Email: info@pixsellz.io" class="contact__link"> <svg class=" icon " viewBox="0 0 18 18 "><use xlink:href="sprite.svg#mail "></svg> Email: info@pixsellz.io</a>
+                    </div>
+                    <div class="contacts__item "><a href="https://goo.gl/maps/QkmeWh4zHLbzq5AT7 " target="_blank " class="contact__link"><svg class="icon" viewBox="0 0 18 18"><use xlink:href="sprite.svg#home"></svg> Adress: 456
+                        Hagenes Gardens<br> Suite 808</a>
+                    </div>
                 </div>
             </div>
+
 
         </aside>
 
@@ -242,6 +254,17 @@
             </ul>
         </nav>
     </footer>
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12.7785 0H5.22146C4.49306 0 3.89996 0.5931 3.89996 1.3215V16.6782C3.89996 17.4069 4.49306 18 5.22146 18H12.7782C13.5069 18 14.1 17.4069 14.1 16.6785V1.3215C14.1 0.5931 13.5069 0 12.7785 0ZM4.49996 2.4H13.5V13.8H4.49996V2.4ZM5.22146 0.6H12.7782C13.1763 0.6 13.5 0.9237 13.5 1.3215V1.8H4.49996V1.3215C4.49996 0.9237 4.82366 0.6 5.22146 0.6ZM12.7785 17.4H5.22146C4.82366 17.4 4.49996 17.0763 4.49996 16.6785V14.4H13.5V16.6785C13.5 17.0763 13.1763 17.4 12.7785 17.4Z" fill="black"/>
+        <path d="M8.99999 14.7C8.33819 14.7 7.79999 15.2382 7.79999 15.9C7.79999 16.5618 8.33819 17.1 8.99999 17.1C9.66179 17.1 10.2 16.5618 10.2 15.9C10.2 15.2382 9.66179 14.7 8.99999 14.7ZM8.99999 16.5C8.66909 16.5 8.39999 16.2309 8.39999 15.9C8.39999 15.5691 8.66909 15.3 8.99999 15.3C9.33089 15.3 9.59999 15.5691 9.59999 15.9C9.59999 16.2309 9.33089 16.5 8.99999 16.5Z" fill="black"/>
+        <path d="M7.8 1.49999H9C9.1659 1.49999 9.3 1.36589 9.3 1.19999C9.3 1.03409 9.1659 0.899994 9 0.899994H7.8C7.6341 0.899994 7.5 1.03409 7.5 1.19999C7.5 1.36589 7.6341 1.49999 7.8 1.49999Z" fill="black"/>
+        <path d="M9.89998 1.49999H10.2C10.3659 1.49999 10.5 1.36589 10.5 1.19999C10.5 1.03409 10.3659 0.899994 10.2 0.899994H9.89998C9.73408 0.899994 9.59998 1.03409 9.59998 1.19999C9.59998 1.36589 9.73408 1.49999 9.89998 1.49999Z" fill="black"/>
+        <path d="M16.9835 1.37071C16.8662 1.25341 16.6766 1.25341 16.5593 1.37071C16.442 1.48801 16.442 1.67761 16.5593 1.79491C17.6801 2.9157 17.6801 4.7394 16.5593 5.8605C16.442 5.9778 16.442 6.1674 16.5593 6.2847C16.6178 6.3432 16.6946 6.37261 16.7714 6.37261C16.8482 6.37261 16.925 6.3432 16.9835 6.2847C18.3383 4.9302 18.3383 2.7255 16.9835 1.37071Z" fill="black"/>
+        <path d="M15.7203 2.05351C15.603 1.93621 15.4134 1.93621 15.2961 2.05351C15.1788 2.17081 15.1788 2.36041 15.2961 2.47771C15.6672 2.84881 15.8715 3.34321 15.8715 3.86941C15.8715 4.39561 15.6672 4.88971 15.2961 5.26081C15.1788 5.37811 15.1788 5.56771 15.2961 5.68501C15.3546 5.74351 15.4314 5.77291 15.5082 5.77291C15.585 5.77291 15.6618 5.74351 15.7203 5.68501C16.2048 5.20081 16.4715 4.55581 16.4715 3.86941C16.4715 3.18301 16.2051 2.53771 15.7203 2.05351Z" fill="black"/>
+        <path d="M1.44128 1.79491C1.55858 1.67761 1.55858 1.48801 1.44128 1.37071C1.32398 1.25341 1.13438 1.25341 1.01708 1.37071C-0.337723 2.7255 -0.337723 4.9299 1.01708 6.2847C1.07558 6.3432 1.15238 6.37261 1.22918 6.37261C1.30598 6.37261 1.38278 6.3432 1.44128 6.2847C1.55858 6.1674 1.55858 5.9778 1.44128 5.8605C0.320176 4.7397 0.320176 2.91601 1.44128 1.79491Z" fill="black"/>
+        <path d="M2.7039 1.9707C2.5866 1.8534 2.397 1.8534 2.2797 1.9707C1.7952 2.4549 1.5285 3.0999 1.5285 3.7863C1.5285 4.4727 1.7952 5.1177 2.2797 5.6022C2.3382 5.6607 2.415 5.6901 2.4918 5.6901C2.5686 5.6901 2.6454 5.6607 2.7039 5.6022C2.8212 5.4849 2.8212 5.2953 2.7039 5.178C2.3328 4.8069 2.1285 4.3125 2.1285 3.7863C2.1285 3.2601 2.3325 2.766 2.7039 2.3949C2.8209 2.2779 2.8209 2.088 2.7039 1.9707Z" fill="black"/>
+        </svg>
+
 </body>
 
 </html>
