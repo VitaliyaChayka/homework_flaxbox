@@ -679,6 +679,7 @@ li.nav__item:first-child {
     max-width: 640px;
     height: auto;
     display: flex;
+    overflow: hidden;
 }
 
 .review__block_name {

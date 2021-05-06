@@ -1008,6 +1008,7 @@ li.nav__item:first-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
 }
 
 .review__block_name {
